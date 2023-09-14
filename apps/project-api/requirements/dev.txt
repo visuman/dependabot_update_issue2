@@ -1,0 +1,7 @@
+ipython
+flask-shell-ipython
+ipdb
+sqlparse
+safety
+dependency-check
+pip-tools
