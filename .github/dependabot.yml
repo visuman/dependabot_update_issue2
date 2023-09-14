@@ -1,0 +1,26 @@
+version: 2
+updates:
+    - package-ecosystem: pip
+      directory: '/apps/project-api'
+      schedule:
+          interval: weekly
+          day: sunday
+          time: '01:00'
+          timezone: 'Asia/Kolkata'
+      groups:
+          project-api-dependencies:
+              patterns:
+                  - '*'
+              exclude-patterns:
+                  - 'pandas'
+                  - 'numpy'
+                  - 'pyjnius'
+                  - 'onnxruntime'
+          project-api-exec-dependencies:
+              patterns:
+                  - 'pandas'
+                  - 'numpy'
+                  - 'pyjnius'
+                  - 'onnxruntime'
+
+      open-pull-requests-limit: 20
