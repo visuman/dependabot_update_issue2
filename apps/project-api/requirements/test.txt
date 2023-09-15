@@ -1,24 +1,24 @@
-# pytest>=4
-# pytest-mock
-# coverage
-# pytest-cov
-# pytest-flask
-# pytest-env
-# pytest-xdist
-# pytest-error-for-skips
-# pytest-benchmark
-# responses
-# cryptography
-# findspark>=2
+pytest>=4
+pytest-mock
+coverage
+pytest-cov
+pytest-flask
+pytest-env
+pytest-xdist
+pytest-error-for-skips
+pytest-benchmark
+responses
+cryptography
+findspark>=2
 # pyspark # Assume this is installed separately
 
 # Authentication tests
-# python3-saml
-# ldap3
+python3-saml
+ldap3
 
 # Optional plugins
-# flask-profiler
-# ipython <= 8.13.2
+flask-profiler
+ipython
 
 # WSGI Server tests
 cheroot
@@ -27,20 +27,23 @@ gunicorn
 # Export documentation tests
 pypandoc-binary
 
-# # Execution dependencies
-# # -r recommended.txt
+# Execution dependencies
+-r recommended.txt
 
-# xgboost
-# gensim<4 ; python_version < "3.9"  # Needed for the sklearn API, gensim<4 isn't compatible with python > 3.8
-# scikit-learn==1.0.2 ; python_version == "3.7"
-# scikit-learn==1.2.2 ; python_version >= "3.8"
+# ML pickle tests
+xgboost
+gensim<4 ; python_version < "3.9"  # Needed for the sklearn API, gensim<4 isn't compatible with python > 3.8
+scikit-learn==1.0.2 ; python_version == "3.7"
+scikit-learn==1.2.2 ; python_version >= "3.8"
 
-# sklearn2pmml==0.94.1
+sklearn2pmml==0.94.1
 
-# pymysql
-# pyodbc
-# cx-oracle
-# psycopg2-binary
+# DB connectors
+pymysql
+pyodbc
+cx-oracle
+psycopg2-binary
 
-# matplotlib
-# seaborn
+# Visualisation plugins
+matplotlib
+seaborn
