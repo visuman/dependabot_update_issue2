@@ -17,8 +17,8 @@
 # ldap3
 
 # Optional plugins
-flask-profiler
-ipython <= 8.13.2
+# flask-profiler
+# ipython <= 8.13.2
 
 # WSGI Server tests
 cheroot
