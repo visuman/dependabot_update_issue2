@@ -1,0 +1,2 @@
+pysqlite3-binary; python_version<'3.10'
+pysqlite3; python_version>='3.10'  # For py3.10, we expect users to install binary separately

@@ -1,49 +1,67 @@
-pytest>=4
-pytest-mock
-coverage
-pytest-cov
-pytest-flask
-pytest-env
-pytest-xdist
-pytest-error-for-skips
-pytest-benchmark
-responses
+
+flask
+jinja2
+werkzeug
+marshmallow
+flask-sqlalchemy
+sqlalchemy
+alembic
+marshmallow-sqlalchemy
+flask-smorest
+
+Flask-Cors
+flask-talisman
+sqlalchemy-utils
+sqlalchemy-history==2.0.0
+
+
+passlib
+
+Flask-Babel
+
+plotly
+celery[redis]
+
+
+python-dateutil
+networkx<2.7; python_version=='3.7'
+networkx; python_version>='3.8'
+
+numpy
+pandas
+pyjnius
+onnxruntime
+
+stringcase
+fs
+dulwich
+pyflakes
 cryptography
-findspark>=2
-# pyspark # Assume this is installed separately
+dynaconf
+dogpile.cache
+cachetools
+notifiers
+click
+requests
+python-daemon
 
-# Authentication tests
-python3-saml
-ldap3
+kaleido
 
-# Optional plugins
-flask-profiler
-ipython <= 8.16.1
-
-# WSGI Server tests
-cheroot
-gunicorn
-
-# Export documentation tests
-pypandoc-binary
-
-# Execution dependencies
-# -r recommended.txt
-
-# ML pickle tests
-xgboost
-gensim<4 ; python_version < "3.9"  # Needed for the sklearn API, gensim<4 isn't compatible with python > 3.8
-scikit-learn==1.0.2 ; python_version == "3.7"
-scikit-learn==1.3.2 ; python_version >= "3.8"
-
-sklearn2pmml==0.99.1
-
-# DB connectors
-pymysql
-pyodbc
-cx-oracle
-psycopg2-binary
-
-# Visualisation plugins
-matplotlib
-seaborn
+jsonschema
+zipp
+webargs
+typing-extensions
+pyrsistent
+pyparsing
+protobuf
+markupsafe
+mako
+kombu
+itsdangerous
+importlib-resources
+importlib-metadata
+decorator
+apispec[marshmallow]
+charset-normalizer==3.2.0
+stevedore; python_version >= "3.8"
+docutils
