@@ -12,7 +12,7 @@ flask-smorest
 Flask-Cors
 flask-talisman
 sqlalchemy-utils
-sqlalchemy-history==2.0.0
+sqlalchemy-history==2.1.1
 
 ### Logging
 # sentry-sdk[flask]
@@ -76,7 +76,7 @@ importlib-resources
 importlib-metadata
 decorator
 apispec[marshmallow]
-charset-normalizer==3.2.0
+charset-normalizer==3.3.2
 stevedore<4; python_version == "3.7"  # Needed for py3.7
 stevedore; python_version >= "3.8"
 docutils
